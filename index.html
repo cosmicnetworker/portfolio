@@ -1,59 +1,198 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lorenze Ken Modequillo - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      background: linear-gradient(120deg, #f3f0fc, #e0ccff);
+      color: #2d2d2d;
+    }
+  
+    header, footer {
+      background: linear-gradient(270deg, #6f42c1, #8e44ad, #6f42c1);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+    }
+  
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+  
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+  
+    h2 {
+      color: #6f42c1;
+      border-bottom: 2px solid #8e44ad;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+  
+    .list-group-item {
+      background: transparent;
+      border: none;
+      padding-left: 0;
+      font-size: 1.05rem;
+    }
+  
+    .card {
+      border: none;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(111, 66, 193, 0.25);
+    }
+  
+    .card-title {
+      color: #6f42c1;
+    }
+  
+    section {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+  
+    .btn-primary {
+      background-color: #8e44ad;
+      border: none;
+    }
+  
+    .btn-primary:hover {
+      background-color: #732d91;
+    }
+  
+    .section-bg {
+      background-color: #f8f0ff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(111, 66, 193, 0.1);
+    }
+  </style>  
 </head>
 <body>
-  <div class="container my-5">
-    <div class="text-center">
-      <img src="me,jpg" alt="Your Photo" class="rounded-circle mb-3" width="150" height="150">
-      <h1>Your Full Name</h1>
-      <p class="lead">Welcome to my portfolio!</p>
-    </div>
 
-    <hr>
+  <!-- Header -->
+  <header class="text-white text-center py-5">
+    <img src="me.jpg" alt="Your Photo" class="profile-img mb-3">
+    <h1 class="mb-0 fw-bold">Lorenze Ken Modequillo</h1>
+    <p class="lead mb-0">BS Information Systems Student | Aspiring Tech Innovator</p>
+  </header>
 
-    <section>
+  <!-- Main Content -->
+  <main class="container py-5">
+
+    <!-- Education -->
+    <section id="education" class="section-bg">
       <h2>Education</h2>
-      <ul>
-        <li>Bachelor of Science in Information Systems – Ateneo de Davao University</li>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Ateneo de Davao University</strong><br>
+          Bachelor of Science in Information Systems<br>
+          2021 – Present
+        </li>
+        <li class="list-group-item">
+          <strong>Davao City National High School</strong><br>
+          Senior High School – STEM Track<br>
+          2019 – 2021
+        </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>UrbanRoots Davao</strong> - Hydroponic gardening platform for urban spaces.</li>
-        <li><strong>Neighborly App</strong> - Tool-sharing and local cooperation app for subdivisions.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, Bootstrap</li>
-        <li>JavaScript, Python</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Affiliations (Optional)</h2>
-      <ul>
-        <li>Ciphers Dance Crew - Talents Head</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Research (Optional)</h2>
-      <ul>
-        <li>Urban Agriculture and Hydroponics: A Case Study in Davao</li>
-      </ul>
-    </section>
+    <!-- Projects -->
+<section id="projects" class="section-bg">
+  <h2>Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <a href="project1.html" style="text-decoration: none;">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">UrbanRoots Davao</h5>
+            <p class="card-text">A hydroponics-based urban gardening platform for sustainable agriculture in cities.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="project2.html" style="text-decoration: none;">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">NETGINEER</h5>
+            <p class="card-text">A freelancing platform for engineering students to provide services and gain experience.</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+</section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section-bg">
+      <h2>Skills</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Web Development (HTML, CSS, Bootstrap, JavaScript)</li>
+        <li class="list-group-item">Python, PHP, MySQL</li>
+        <li class="list-group-item">UI/UX Design (Figma)</li>
+        <li class="list-group-item">Git & GitHub</li>
+        <li class="list-group-item">Team Leadership & Project Management</li>
+      </ul>
+    </section>
+
+    <!-- Affiliation -->
+    <section id="affiliation" class="section-bg">
+      <h2>Affiliation</h2>
+      <p>Member, Computer Studies Cluster - AdDU</p>
+      <p>Talents Head, Ciphers Dance Crew</p>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section-bg">
+      <h2>Research</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Enhancing Urban Gardening via Hydroponic Systems and IoT Monitoring</strong><br>
+          A study on integrating tech-driven solutions in city farming using UrbanRoots Davao.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <small>&copy; 2025 Lorenze Ken Modequillo. All rights reserved.</small>
+  </footer>
+
 </body>
 </html>

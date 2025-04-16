@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanRoots Davao - Project Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #f3f0fc, #e0ccff);
+      color: #2d2d2d;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(270deg, #6f42c1, #8e44ad, #6f42c1);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      overflow-y: auto;
+    }
+
+    .section-bg {
+      background-color: #f8f0ff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(111, 66, 193, 0.1);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #8e44ad;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #732d91;
+    }
+
+    footer {
+      background: linear-gradient(270deg, #6f42c1, #8e44ad, #6f42c1);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 576px) {
+      .section-bg {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UrbanRoots Davao</h1>
+    <p class="lead mb-0">Hydroponic Gardening for the Urban Future</p>
+  </header>
+
+  <main>
+    <div class="section-bg">
+      <h2>Overview</h2>
+      <p>UrbanRoots Davao is a hydroponics-based platform designed to bring sustainable urban gardening to life...</p>
+      
+      <h2>Features</h2>
+      <ul>
+        <li>Hydroponic starter kits for beginners and pros</li>
+        <li>IoT monitoring system to track plant health</li>
+        <li>Urban gardening community portal</li>
+        <li>Mobile app for guidance and support</li>
+      </ul>
+
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>HTML, CSS, Bootstrap</li>
+        <li>JavaScript for interactive dashboard</li>
+        <li>IoT sensors for environmental data</li>
+        <li>MySQL + PHP backend</li>
+      </ul>
+
+      <a href="index.html" class="btn btn-primary mt-3">← Back to Portfolio</a>
+    </div>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Lorenze Ken Modequillo. All rights reserved.</small>
+  </footer>
+
+</body>
+</html>
